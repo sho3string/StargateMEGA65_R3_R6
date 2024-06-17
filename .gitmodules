@@ -1,3 +1,7 @@
 [submodule "QNICE"]
 	path = M2M/QNICE
 	url = https://github.com/sy2002/QNICE-FPGA
+[submodule "CORE/Arcade-Robotron_MiSTer"]
+	path = CORE/Arcade-Robotron_MiSTer
+	url = https://github.com/sho3string/Arcade-Robotron_MiSTer/
+	branch = mega65
