@@ -80,7 +80,7 @@ $length = 33
 
 
 	Write-Output "Building CPU ROM"
-	cmd /c copy /b 01+02+03+04+05+06+07+08+09+10+11+12 $WorkingDirectory"\arcade\stargate\game.bin"
+	cmd /c copy /b 01+02+03+04+05+06+07+08+09+10+11+12 $WorkingDirectory"\arcade\stargate\game.rom"
 	
 	Write-Output "Dumping NVRAM"
 	$nvramBytes = [System.Byte[]]$nvram
