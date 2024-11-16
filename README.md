@@ -16,11 +16,15 @@ Run the script: a) First extract all the files within the zip to any working fol
 
 b) Copy the powershell or shell script to the same folder and execute it to create the following files.
 
-image
+**Ensure the following files are present and sizes are correct**
+![image](https://github.com/user-attachments/assets/ca7c5a4a-68f5-44a3-b024-336aeded14ff)
 
-For Windows run the script via PowerShell SG_rom_installer.ps1
+For Windows run the script via PowerShell **SG_rom_installer.ps1**  
+Simply select the script and with the right mouse button select the **Run with Powershell**  
+![image](https://github.com/user-attachments/assets/cef56757-be96-42a0-83ec-24ab6054d3c2)
 
-For Unix/Linux/MacOS ./SG_rom_installer.sh
+
+For Linux/Unix/MacOS execute ./SG_rom_installer.sh  
 
 The script will automatically create the /arcade/stargate folder where the generated ROMs will reside.
 
