@@ -80,7 +80,7 @@ $length = 33
 
 
 	Write-Output "Building CPU ROM"
-	cmd /c copy /b 01+02+03+04+05+06+07+08+09+10+11+12 $WorkingDirectory"\arcade\stargate\game.rom"
+	cmd /c copy /b 01+02+03+04+05+06+07+08+09+10+11+12 $WorkingDirectory"\arcade\stargate\game.bin"
 	
 	Write-Output "Dumping NVRAM"
 	$nvramBytes = [System.Byte[]]$nvram
@@ -88,7 +88,7 @@ $length = 33
 	[System.IO.File]::WriteAllBytes($nvramPath, $nvramBytes)
 	
 	Write-Output "Copying SND ROM"
-	cmd /c copy /b sg.snd $WorkingDirectory"\arcade\stargate\sound.snd"
+	cmd /c copy /b sg.snd+sg.snd $WorkingDirectory"\arcade\stargate\sound.snd"
 	
 	Write-Output "Copying Decoders"
 	cmd /c copy /b decoder.4 $WorkingDirectory"\arcade\stargate\decoder.4"

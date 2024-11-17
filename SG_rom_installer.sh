@@ -77,7 +77,7 @@ echo "'----------------------'"
 mkdir -p "$WorkingDirectory/arcade/stargate"
 
 echo "Building CPU ROM"
-cat 01 02 03 04 05 06 07 08 09 10 11 12 > "$WorkingDirectory/arcade/stargate/game.rom"
+cat 01 02 03 04 05 06 07 08 09 10 11 12 > "$WorkingDirectory/arcade/stargate/game.bin"
 echo "Splitting Character ROM"
 
 # Dumping nvram table
@@ -86,7 +86,7 @@ echo -ne "$(printf '\\x%02x' "${nvram_table[@]}")" > "$WorkingDirectory/arcade/s
 
 # Copying sound ROMs
 echo "Copying Sound ROMs"
-cp sg.snd "$WorkingDirectory/arcade/stargate/sound.snd"
+cat sg.snd sg.snd > "$WorkingDirectory/arcade/stargate/sound.snd"
 
 # Copying decoders
 echo "Copying Decoders"
